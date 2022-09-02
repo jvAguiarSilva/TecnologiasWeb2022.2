@@ -1,0 +1,64 @@
+<!-- 
+    Nesta página o usuário poderá indicar suas atividades de horas complementares e horas de
+    extensão.
+    As atividades são compostas de: nome, horas, data, e-mail do responsável, telefone do
+    responsável.
+    Os campos do formulário devem possuir validação.
+    Obs: o formulário deve ser feito com as novas tags do HTML5
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <h1>UFC - SIGAA - SISTEMA INTEGRADO DE GESTÃO DE ATIVIDADES ACADÊMICAS</h1>
+    </header>
+
+    <br><br><br>
+    <h2>Atividades de horas complementares</h2>
+    <form action="painel_controle.html" method="get">
+        <label for="nome_atividade">Nome da Atividade:</label>
+        <input type="text" name="nome_atividade"><br>
+        <label for="horas_atividade">Quantidade de horas:</label>
+        <input type="number" name="horas_atividade"><br>
+        <label for="data_atividade">Data:</label>
+        <input type="date" name="data_atividade"><br>
+        <label for="email_atividade">Email:</label>
+        <input type="email" name="email_atividade"><br>
+        <label for="telefone_atividade">Telefone:</label>
+        <input type="tel" name="telefone_atividade"><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+    <h2>Atividades de horas de extensão</h2>
+    <form action="painel_controle.html" method="get">
+        <label for="nome_extensao">Nome da extensão:</label>
+        <input type="text" name="nome_extensao"><br>
+        <label for="horas_extensao">Quantidade de horas:</label>
+        <input type="number" name="horas_extensao"><br>
+        <label for="data_extensao">Data:</label>
+        <input type="date" name="data_extensao"><br>
+        <label for="email_extensao">Email:</label>
+        <input type="email" name="email_extensao"><br>
+        <label for="telefone_extensao">Telefone:</label>
+        <input type="tel" name="telefone_extensao"><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+    <footer>
+        <p>SIGAA | Copyright 2010-2022 - Superintendência de Tecnologia de Informação - UFC</p>
+    </footer>
+</body>
+
+</html>
