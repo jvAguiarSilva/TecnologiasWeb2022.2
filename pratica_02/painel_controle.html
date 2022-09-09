@@ -1,0 +1,155 @@
+<!-- 
+    Está pagina deverá conter os links para as demais páginas do Novo SIGAA
+    ● Um campo de perfil do usuário com sua foto nome, email, IRA e quantidade de
+    créditos cursados e uma paleta de cor para o usuário escolher a cor tema que
+    deseja ver o Novo SIGAA
+    ● Uma lista das disciplinas cursadas atualmente, o sistema deverá mostrar barras de
+    progresso dos créditos cursados em relação ao total de créditos necessários. Sendo
+    ○ Disciplinas obrigatórias
+    ○ Disciplinas eletivas
+    ○ Horas de estágio obrigatório
+    ○ Horas complementares
+    ○ Horas de extensão
+    ○ Horas de programação
+    ● Um resumo das atividades já integralizadas pelo aluno e as atividades que ainda
+    faltam para serem integralizadas 
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        nav a {
+            padding: 4px;
+        }
+
+        nav a:hover {
+            background-color: #394674;
+            color: white;
+        }
+
+        .primeira-div,
+        .segunda-div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .content {
+            padding: 50px 100px;
+        }
+
+        .dados {
+            align-self: center;
+        }
+
+        .dados h3 {
+            margin: 10px 0;
+        }
+
+        .progresso progress {
+            position: relative;
+            display: inline-block;
+            margin: 5px 0;
+            height: 15px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>Painel de Controle</title>
+</head>
+
+
+<body>
+    <header class="main-header">
+        <h1>UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</p>
+    </header>
+
+    <nav class="nav-bar">
+        <a href="index.html">login/sair</a>
+        <a href="historico.html">Histórico</a>
+        <a href="cadastro.html">Cadastro de Componentes Curr.</a>
+    </nav>
+
+    <div class="primeira-div">
+        <div class="content dados">
+            <h2>
+                Aluno: João Vitor de Aguiar Silva
+            </h2>
+            <h3>Email: xxxx@alu.ufc.br</h3>
+            <h3>Matrícula: 475947</h3>
+            <h3>Ira: 8.1</h3>
+            <h3>Créditos cursados: 2500 Hrs</h3>
+        </div>
+
+        <div class="content">
+            <img src="me.jpg" alt="Perfil" width="300px">
+            <h3>Escolha seu tema: <input type="color" name="color" id="choice-color"></h3>
+            <br>
+        </div>
+
+    </div>
+
+    <div class="segunda-div">
+        <div class="content dados">
+            <h3>Disciplinas Matriculadas</h3>
+            <ul>
+                <li>ECO0057 - QUALIDADE DE SOFTWARE (2022.2 - T01)</li>
+                <li>ECO0022 - SISTEMAS OPERACIONAIS (2022.2 - T01)</li>
+                <li>ECO0056 - TECNOLOGIAS WEB (2022.2 - T01)</li>
+                <li>SBL0082 - MICROPROCESSADORES (2022.2 - T01)</li>
+            </ul>
+        </div>
+
+        <div class="content progresso">
+            <h4>Progresso no Curso</h4>
+            <p>Disciplinas obrigatórias</p>
+            <progress value="2" max="3"></progress>
+            <p>Disciplinas eletivas</p>
+            <progress value="2" max="4"></progress>
+            <p>Horas de estágio obrigatório</p>
+            <progress value="1" max="100"></progress>
+            <p>Horas complementares</p>
+            <progress value="1" max="100"></progress>
+            <p>Horas de extensão</p>
+            <progress value="1" max="100"></progress>
+            <p>Horas de programação</p>
+            <progress value="20" max="30"></progress>
+        </div>
+    </div>
+
+
+
+
+
+
+    <br><br>
+    <h4>
+        Atividades Integralizadas
+    </h4>
+    <p>Aluno realizou a lista 01 da disciplina de Microprocessadores. Bem como o envio da apresentação em vídeo da
+        disciplina de Tecnologias Web.
+    </p>
+    <br>
+    <h4>
+        Atividades NÃO Integralizadas
+    </h4>
+    <p>Aluno precisa concluir o resumo do capítulo introdutório da disciplina de Sistemas Operacionais.</p>
+
+
+    <footer>
+        <p>SIGAA | Copyright 2010-2022 - Superintendência de Tecnologia de Informação - UFC</p>
+    </footer>
+</body>
+
+</html>

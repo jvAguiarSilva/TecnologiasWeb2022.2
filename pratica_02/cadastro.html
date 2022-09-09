@@ -1,0 +1,91 @@
+<!-- 
+    Nesta página o usuário poderá indicar suas atividades de horas complementares e horas de
+    extensão.
+    As atividades são compostas de: nome, horas, data, e-mail do responsável, telefone do
+    responsável.
+    Os campos do formulário devem possuir validação.
+    Obs: o formulário deve ser feito com as novas tags do HTML5
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Cadastro</title>
+    <style>
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        input {
+            padding: 10px;
+            width: 400px;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .label {
+            font-size: 20px;
+            margin: 2px 0;
+        }
+
+        .buttom {
+            width: 200px;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</p>
+    </header>
+
+    <br><br><br>
+
+    <div style="display: inline-block;">
+        <h2>Atividades de horas complementares</h2>
+        <form action="painel_controle.html" method="get">
+            <label for="nome_atividade" class="label">Nome da Atividade:</label>
+            <input type="text" name="nome_atividade"><br>
+            <label class="label" for="horas_atividade">Quantidade de horas:</label>
+            <input type="number" name="horas_atividade"><br>
+            <label class="label" for="data_atividade">Data:</label>
+            <input type="date" name="data_atividade"><br>
+            <label class="label" for="email_atividade">Email:</label>
+            <input type="email" name="email_atividade"><br>
+            <label class="label" for="telefone_atividade">Telefone:</label>
+            <input type="tel" name="telefone_atividade"><br>
+            <button class="buttom" type="submit">Cadastrar</button>
+        </form>
+
+
+        <h2>Atividades de horas de extensão</h2>
+        <form action="painel_controle.html" method="get">
+            <label class="label" for="nome_extensao">Nome da extensão:</label>
+            <input type="text" name="nome_extensao"><br>
+            <label class="label" for="horas_extensao">Quantidade de horas:</label>
+            <input type="number" name="horas_extensao"><br>
+            <label class="label" for="data_extensao">Data:</label>
+            <input type="date" name="data_extensao"><br>
+            <label class="label" for="email_extensao">Email:</label>
+            <input type="email" name="email_extensao"><br>
+            <label class="label" for="telefone_extensao">Telefone:</label>
+            <input type="tel" name="telefone_extensao"><br>
+            <button class="buttom" type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+
+
+    <footer>
+        <p>SIGAA | Copyright 2010-2022 - Superintendência de Tecnologia de Informação - UFC</p>
+    </footer>
+</body>
+
+</html>
